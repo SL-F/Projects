@@ -1,0 +1,402 @@
+*{
+  margin:0px;
+  padding:0px;
+  box-sizing:border-box;
+}
+ body{
+   background-image:url(../Img/background.jpg);
+ }
+
+.apá{
+  width:100%;
+  max-width:1170px;
+  margin:auto;
+}
+/* ENCABEZADO */
+
+header{
+  width:100%;
+  height:300px;
+}
+
+.logo{
+  padding:10px 0;
+}
+
+.logo img{
+  width:100%;
+  max-width:430px;
+  display:block;
+  margin:auto;
+}
+
+.menu{
+  display:flex;
+  flex-direction:row;
+  flex-wrap:wrap;
+  justify-content:space-around;
+  max-width:430px;
+  margin:auto;
+}
+
+.menu a:hover{
+  color:black;
+}
+
+.menu a{
+  text-decoration:none;
+  color:white;
+  font-size:18px;
+}
+/* FIN ENCABEZADO */
+
+
+/* PRINCIPAL */
+
+.principal{
+  width:100%;
+  height:350px;
+  background-image:url(../Img/ff.jpg);
+  background-size:cover;
+  background-position:center bottom;
+}
+
+.principal > div{
+  width:100%;
+  height:100%;
+  background-color: rgba(209,219,189,0.5);
+}
+
+.historia{
+  text-align:center;
+  display:flex;
+  flex-direction:column;
+  flex-wrap:wrap;
+  justify-content:center;
+  align-items:center;
+  height:100%;
+}
+
+.historia h1{
+  font-size:35px;
+  width:100%;
+  max-width:430px;
+  margin-bottom:35px;
+  background-color:rgba(197, 138, 44, 0.69);
+}
+
+.historia p{
+  padding-top:;
+  font-size:18px;
+  max-width:700px;
+}
+
+/* FIN PRINCIPAL */
+
+/* LLAMADO */
+.parte2{
+  margin:5px 0;
+}
+.parte2 > .apá{
+  display:flex;
+  flex-direction:row;
+  flex-wrap:wrap;
+  justify-content:center;
+}
+.llamado2 img{
+  width:100%;
+  height:100%;
+  max-width:870px;
+}
+.explore{
+  background-color:rgba(144, 120, 71, 0.5);
+}
+.explore h3{
+  text-align:center;
+  font-size:22px;
+}
+.explore p{
+  text-align:justify;
+  font-size:15px;
+}
+.parte1{
+  margin:5px 0;
+}
+.parte1 > .apá{
+  display:flex;
+  flex-direction:row;
+  flex-wrap:wrap;
+  justify-content:center;
+}
+.llamado1 img{
+  width:100%;
+  height:100%;
+  max-width:870px;
+}
+.lucha{
+  background-color:rgba(137, 89, 42, 0.58);
+}
+.lucha h3{
+  text-align:center;
+  font-size:22px;
+}
+.lucha p{
+  text-align:justify;
+  font-size:15px;
+}
+
+/* FIN LLAMADO */
+
+
+/* INFORMACIÓN */
+  /* INICIO MEDIA */
+@keyframes entra-sale{
+  0%{
+    background:url(../Img/valus.jpg);
+    background-size:cover;
+  }
+  20%{
+    background:url(../Img/celosia.jpg);
+    background-size:cover;
+  }
+  40%{
+    background:url(../Img/kuromori.jpg);
+    background-size:cover;
+  }
+  60%{
+    background:url(../Img/phaedra.jpg);
+    background-size:cover;
+  }
+  80%{
+    background:url(../Img/phalanx.jpg);
+    background-size:cover;
+    background-position:center;
+  }
+  100%{
+    background:url(../Img/valus.jpg);
+    background-size:cover;
+
+  }
+}
+.informacion{
+  margin:10px 0;
+}
+.informacion > .apá{
+  display:flex;
+  flex-direction:row;
+  flex-wrap:wrap;
+  justify-content:center;
+}
+ .info{
+  width:100%;
+  max-width:570px;
+  align-items:center;
+}
+.y{
+  width:100%;
+  height:249.750px;
+  animation-name:entra-sale;
+  animation-duration:30s;
+  animation-iteration-count:infinite;
+}
+.y:hover{
+  animation-play-state:paused;
+}
+.acerca-de{
+  text-align:center;
+  padding:15px 0px;
+  max-width:570px;
+}
+
+@media all and (min-width:500px) and (max-width:1554px){
+ .informacion > .apá{
+   width:100%;
+   height:;
+ }
+ .y{
+   width:100%;
+   height:310px;
+ }
+ .acerca-de h2{
+   font-size:35px;
+ }
+ .acerca-de p{
+   font-size:18px;
+ }
+ .acerca-de{
+   padding:0px;
+ }
+ .explore h3{
+   font-size:25px;
+ }
+ .explore p{
+   font-size:16px;
+   padding: 0 5px;
+ }
+ .lucha h3{
+   font-size:25px;
+ }
+ .lucha p{
+   font-size:16px;
+   padding:0 5px;
+ }
+}
+
+@media all and (min-width:665px) and (max-width:819px) {
+  .z{
+    margin-top:5px;
+    background-color:rgba(144, 120, 71, 0.48);
+  }
+}
+
+@media all and (min-width:830px) and (max-width:1154px){
+ .explore p{
+    font-size:18px;
+    padding: 0 10px;
+  }
+ .lucha p{
+    font-size:18px;
+    padding:0 10px;
+  }
+}
+
+@media all and (min-width:1155px) and (max-width:1612px){
+  .explore{
+    margin-top:4px;
+    padding:2px 5px;
+  }
+  .explore h3{
+    font-size:28px;
+  }
+  .explore p{
+    font-size:18px;
+  }
+  .lucha{
+    margin-top:4px;
+    padding:2px 5px;
+  }
+  .lucha h3{
+    font-size:28px;
+  }
+  .lucha p{
+    font-size:18px;
+  }
+  .informacion{
+    height:320px;
+    margin-top:25px;
+    margin-bottom:35px;
+  }
+  .info{
+    height:320px;
+  }
+  .acerca-de{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    padding-left:20px;
+  }
+  .acerca-de h2{
+    font-size:28px;
+  }
+  .acerca-de p{
+    font-size:18px;
+  }
+}
+
+@media all and (min-width:1612px){
+  .parte2{
+    margin-top:20px;
+    display:flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+  }
+  .llamado2 img{
+    position:relative;
+    left:370px;
+  }
+  .explore{
+    background-color:rgba(144, 120, 71, 0.48);
+    position:relative;
+    bottom:239px;
+    right:320px;
+    width:950px;
+    padding:2px 5px;
+  }
+
+  .explore p{
+    font-size:20px;
+  }
+  .explore h3{
+    font-size:30px;
+  }
+
+  .parte1{
+    display:flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+    height:420px;
+  }
+  .llamado1 img{
+    position:relative;
+    right:370px;
+    bottom:100px;
+  }
+  .lucha{
+    background-color:rgba(144, 120, 71, 0.48);
+    position:relative;
+    bottom:320px;
+    left:314px;
+    width:950px;
+    padding:2px 5px;
+  }
+  .lucha p{
+    font-size:20px;
+  }
+  .lucha h3{
+    font-size:30px;
+  }
+
+  .informacion{
+    height:320px;
+    margin-bottom:35px;
+  }
+  .info{
+    height:320px;
+  }
+  .acerca-de{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    padding-left:20px;
+  }
+  .acerca-de h2{
+    font-size:28px;
+  }
+  .acerca-de p{
+    font-size:18px;
+  }
+}
+
+  /* FIN MEDIA */
+/* FIN INFORMACIÓN */
+
+/* INICIO FIN */
+
+.top-footer{
+  background-color:rgba(144, 120, 71, 0.5);
+  text-align:center;
+}
+.center-footer{
+  width:100%;
+}
+.center-footer img{
+  width:100%;
+}
+.bottom-footer{
+  text-align:center;
+  background-color:rgb(19 18 18);
+  color:#ffffffb3;
+  font-size:14.6px;
+}
+
+/* FIN */
